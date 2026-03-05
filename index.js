@@ -43,7 +43,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['94774575878']
+  const ownerNumber = ['94705325882']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -67,7 +67,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("CHAMA-MD=", '');
+const sessdata = config.SESSION_ID.replace("AHINSA-UID=", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -82,7 +82,7 @@ const port = process.env.PORT || 9090;
   //=============================================
   
   async function connectToWA() {
-  console.log("Connecting to WhatsApp ⏳️...");
+  console.log("❌ 𝙴𝚁𝚁𝙾𝚁 𝚃𝙾 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
   var { version } = await fetchLatestBaileysVersion()
   
@@ -102,18 +102,30 @@ const port = process.env.PORT || 9090;
   connectToWA()
   }
   } else if (connection === 'open') {
-  console.log('🧬 Installing Plugins')
+  console.log('📥 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙸𝙽𝙶 𝙿𝙻𝚄𝙶𝙸𝙽𝚂 𝙰𝙻𝙻𝚆𝙰𝚈𝚂...')
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
   if (path.extname(plugin).toLowerCase() == ".js") {
   require("./plugins/" + plugin);
   }
   });
-  console.log('Plugins installed successful ✅')
-  console.log('Bot connected to whatsapp ✅')
+  console.log('𝙴𝚁𝚁𝙾𝚁 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙴𝙳 𝙰𝙷𝙸𝙽𝚂𝙰 𝚁𝙴𝚃𝚁𝚈 🔄')
+  console.log('𝙰𝙷𝙸𝙽𝚂𝙰 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝙵𝙰𝙸𝙻𝙴𝙳...❌')
   
-  let up = `*Hello there CHAMA-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet CHAMA-MD WhatsApp Bot.\n\n *Thanks for using CHAMA-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com\n\n> © Powered BY CHAMINDU \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/5XNzHkVp/3908.jpg` }, caption: up })
+  let up = `     🟢 𝐐𝐮𝐞𝐞𝐧_𝐀𝐡𝐢𝐧𝐬𝐚-𝐌𝐃 🔴
+
+  ◾ 𝙰𝙻𝙻𝚆𝙰𝚈𝚂 𝙱𝙾𝚃 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚂𝚄𝙲𝚂𝙴𝚂𝚂 🗞️
+
+  *◾ 𝐀𝐡𝐢𝐧𝐬𝐚 𝐢𝐬 𝐕𝐞𝐫𝐫𝐲 𝐒𝐩𝐞𝐞𝐝 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭*
+  *◾ 𝐓𝐲𝐩𝐞 𝐓𝐨 𝐌𝐞𝐧𝐮 𝐅𝐨𝐥𝐝𝐞𝐫 𝐓𝐨 𝐍𝐞𝐰 𝐅𝐮𝐭𝐮𝐫𝐞𝐬*
+  *◾ 𝐀𝐥𝐥𝐰𝐚𝐲𝐬 𝐂𝐨𝐧𝐧𝐞𝐜𝐭 𝐓𝐨 𝐅𝐫𝐞𝐞 𝐀𝐧𝐝 𝐍𝐨𝐭 𝐏𝐚𝐢𝐝*
+  *◾ 𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙿𝚕𝚎𝚊𝚜𝚎 𝙰𝚗𝚢 𝙴𝚛𝚛𝚘𝚛 𝟿𝟺𝟽𝟶𝟻𝟹𝟸𝟻𝟾𝟾𝟸*
+
+  > ── ⋆⋅𖤓⋅⋆ ── 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙺𝙸𝙽𝙶 𝙳𝙸𝙻𝙴𝙴𝚂𝙷𝙰 🐦‍🔥⃤⃟⃝🦅
+  > 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 ▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:10
+  > ⩇⩇:⩇⩇ ↻ ◁ || ▷ ↺
+  `;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/xnl46e.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -162,7 +174,7 @@ const port = process.env.PORT || 9090;
   if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REPLY === "true"){
   const user = mek.key.participant
   const text = `${config.AUTO_STATUS_MSG}`
-  await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
+  await conn.sendMessage(user, { text: text, react: { text: '🐚', key: mek.key } }, { quoted: mek })
             }
             await Promise.all([
               saveMessage(mek),
@@ -198,7 +210,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('94783314361', '923243548051', '94774575878');
+    const jawad = ('94705325882');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -243,12 +255,7 @@ const port = process.env.PORT || 9090;
 					}
 					return;
 				}
- //================ownerreact==============
-    
-  if(senderNumber.includes("94774575878")){
-  if(isReact) return
-  m.react("💖")
-   }
+ 
   //==========public react============//
   // Auto React 
   if (!isReact && senderNumber !== botNumber) {
@@ -768,7 +775,7 @@ if (!isReact && senderNumber === botNumber) {
   }
   
   app.get("/", (req, res) => {
-  res.send("CHAMA MD STARTED ✅");
+  res.send("𝙰𝚑𝚒𝚗𝚜𝚊 𝚂𝚝𝚊𝚛𝚝 𝙵𝚊𝚒𝚕𝚍 ❌");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
